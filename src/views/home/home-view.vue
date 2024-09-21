@@ -21,6 +21,8 @@ import FilterSorting from "@/components/filter/FilterSorting.vue";
       <h1>Merhabalar</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae ad facilis consequatur culpa. Laudantium voluptatem illo, tempora, mollitia atque corporis numquam optio, omnis amet autem debitis culpa commodi sed cum saepe temporibus dolorum. Accusamus exercitationem, obcaecati velit fuga eos cupiditate harum. Aut nam sit corrupti libero eveniet voluptate vitae.</p>
       <ButtonSpeedDial />
+
+      <h1>{{ $t('message.hello') }}</h1>
     </div>
 
 
