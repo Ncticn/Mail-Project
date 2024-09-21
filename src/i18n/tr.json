@@ -1,0 +1,38 @@
+{
+    "message": {
+        "hello": "Merhaba Dünya!"
+    },
+    "page": {
+        "mailing-lists": {
+            "title": "Posta Listeleri",
+            "subtitle": "Toplam {0} adet posta listesi bulunmaktadır.",
+            "quantity": "{quantity}"
+        },
+        "contact": {
+            "title": "Size nasıl yardımcı olabiliriz ?",
+            "subtitle": "{0} gösterdiğiniz ilgi için teşekkür ederiz. Lütfen bizimle iletişime geçmek için bu formu kullanın. En kısa sürede size geri döneceğiz.",
+            "url": "Mailinks'e",
+            "form":{
+                "first-name" : "Ad",
+                "last-name" : "Soyad",
+                "email-address": "E-Posta Adresi",
+                "question-type": "Soru Tipi",
+                "general-question": "Genel Soru",
+                "support-request" : "Destek Talebi",
+                "message": "Mesaj",
+                "confirm": "Ekip tarafından benimle iletişime geçilmesine izin veriyorum."
+            }
+        }
+    },
+    "component": {
+        "header": {
+            "mailing-lists": "Posta Listeleri",
+            "campaigns": "Kampanyalar",
+            "email-templates": "E-Posta Şablonları",
+            "contact": "İletişim"
+        },
+        "footer": {
+            "copyright": "© Telif Hakkı Necati CAN. Tüm hakları saklıdır."
+        }
+    }
+}

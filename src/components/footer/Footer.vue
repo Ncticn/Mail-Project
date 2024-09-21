@@ -33,8 +33,7 @@ const items = ref({
           <Brand :position="'justify-center md:justify-start'" />
         </div>
         <div class="footer-copyright col-span-3 md:col-span-1">
-          <p class="text-xs text-center my-auto">
-            &copy; Copyright Necati CAN. All rights reserved.
+          <p class="text-xs text-center my-auto"> {{ $t('component.footer.copyright') }}
           </p>
         </div>
         <div class="footer-social-icons col-span-3 md:col-span-1">

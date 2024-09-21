@@ -26,12 +26,10 @@ const acceptContact = ref("");
               class="bg-[url('@/assets/img/dots.png')] bg-no-repeat bg-[left_1rem_top_1rem] md:bg-left-top bg-[length:250px]"
             >
               <div class="flex flex-col items-start justify-end gap-4 p-16">
-                <h1 class="font-bold text-4xl mb-4">How can we help you ?</h1>
-                <p class="text-xl text-balance">
-                  Thank you for your interest in
-                  <b class="text-violet-800">Mailinks</b>. Please use this form
-                  to contact us. We will get back to you as soon as we can.
-                </p>
+                <h1 class="font-bold text-4xl mb-4 text-violet-800">{{ $t('page.contact.title') }}</h1>
+                <i18n-t keypath="page.contact.subtitle" tag="p" class="text-xl text-balance">
+                  <span class="text-violet-800 font-bold">{{ $t('page.contact.url') }}</span>
+                </i18n-t>
               </div>
             </div>
           </div>
@@ -49,7 +47,7 @@ const acceptContact = ref("");
                   <div class="form-wrapper flex flex-col gap-4">
                     <div class="flex flex-col md:flex-row gap-2">
                       <div class="contact-form-control w-full">
-                        <label for="firstname">First Name </label>
+                        <label for="firstname">{{ $t("page.contact.form.first-name") }} </label>
                         <InputText
                           type="text"
                           id="firstname"
@@ -58,7 +56,7 @@ const acceptContact = ref("");
                       </div>
 
                       <div class="contact-form-control w-full">
-                        <label for="lastname">Last Name </label>
+                        <label for="lastname">{{ $t("page.contact.form.last-name") }}</label>
                         <InputText
                           type="text"
                           id="lastname"
@@ -68,12 +66,12 @@ const acceptContact = ref("");
                     </div>
 
                     <div class="contact-form-control">
-                      <label for="email">Email Address </label>
+                      <label for="email">{{ $t("page.contact.form.email-address") }}</label>
                       <InputText type="email" id="email" v-model="email" />
                     </div>
 
                     <div class="contact-form-control">
-                      <label for="">Query Type</label>
+                      <label for="">{{ $t("page.contact.form.question-type") }}</label>
                       <div
                         class="flex flex-col md:flex-row items-center justify-center gap-4"
                       >
@@ -89,7 +87,7 @@ const acceptContact = ref("");
                           <label
                             for="generalEnquiry"
                             class="ml-2 w-full cursor-pointer"
-                            >General Enquiry</label
+                            >{{ $t("page.contact.form.general-question") }}</label
                           >
                         </div>
                         <div
@@ -104,14 +102,14 @@ const acceptContact = ref("");
                           <label
                             for="supportRequest"
                             class="ml-2 w-full cursor-pointer"
-                            >Support Request</label
+                            >{{ $t("page.contact.form.support-request") }}</label
                           >
                         </div>
                       </div>
                     </div>
 
                     <div class="contact-form-control">
-                      <label for="message">Message</label>
+                      <label for="message">{{ $t("page.contact.form.message") }}</label>
                       <Textarea
                         id="message"
                         v-model="message"
@@ -129,7 +127,7 @@ const acceptContact = ref("");
                         class="text-violet-800"
                       />
                       <label for="acceptContact"
-                        >I consent to being contacted by the team</label
+                        >{{ $t("page.contact.form.confirm") }}</label
                       >
                     </div>
                     <ButtonBase :label="'Submit'" class="!rounded-md" />

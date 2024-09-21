@@ -3,26 +3,29 @@ import InputText from "primevue/inputtext";
 import Menubar from "primevue/menubar";
 
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 import { RouterLink } from "vue-router";
+const { t } = useI18n();
+
 
 const items = ref([
   {
-    label: "Mailing Lists",
+    label: t('component.header.mailing-lists'),
     icon: "pi pi-address-book",
     url: "/mailing-lists",
   },
   {
-    label: "Campaigns",
+    label: t('component.header.campaigns'),
     icon: "pi pi-star",
     url: "/campaigns",
   },
   {
-    label: "Email Templates",
+    label: t('component.header.email-templates'),
     icon: "pi pi-file-edit",
     url: "/email-templates",
   },
   {
-    label: "Contact",
+    label: t('component.header.contact'),
     icon: "pi pi-phone",
     url: "/contact",
   },

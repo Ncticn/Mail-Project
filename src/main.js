@@ -1,7 +1,7 @@
 import "@/assets/css/tailwind.css"
 
 import { createApp } from "vue";
-import { createI18n } from "vue-i18n";
+import { createI18n, useI18n  } from "vue-i18n";
 
 import App from "./App.vue";
 import router from "./router";
@@ -11,21 +11,16 @@ import Aura from "./presets/aura";
 import ToastService from 'primevue/toastservice';
 import "primeicons/primeicons.css";
 
+import TR from '@/i18n/tr.json'
+import EN from '@/i18n/en.json'
+
 const i18n = createI18n({
   legacy: false,
-  locale: 'tr',
-  fallbackLocale: 'en',
+  locale: 'EN',
+  fallbackLocale: 'EN',
   messages: {
-    en: {
-      message: {
-        hello: 'Hello World!'
-      }
-    },
-    tr: {
-      message: {
-        hello: 'Merhaba Dünya!'
-      }
-    }
+    TR: TR,
+    EN: EN
   }
 });
 
