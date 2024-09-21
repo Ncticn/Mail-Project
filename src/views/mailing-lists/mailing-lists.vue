@@ -25,9 +25,9 @@ onMounted(async () => {
     >
       <div class="mailing-list-header__title w-full">
         <h1 class="text-3xl font-semibold">{{ $t('page.mailing-lists.title')}}</h1>
-        <i18n-t tag="h3" keypath="page.mailing-lists.subtitle" class="text-sm">
+        <I18nT tag="h3" keypath="page.mailing-lists.subtitle" class="text-sm">
           <b class="text-violet-800"> {{ $t('page.mailing-lists.quantity', {quantity: mailingLists.length }) }}</b>
-        </i18n-t>
+        </I18nT>
       </div>
       <div
         class="mailing-list-header__buttons flex flex-col md:flex-row items-start justify-center md:justify-end w-full gap-4 md:gap-0"
