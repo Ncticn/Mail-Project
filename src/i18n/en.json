@@ -2,7 +2,14 @@
     "message": {
         "hello": "Hello World!"
     },
-    "page": {
+    
+    "page": { 
+
+        "home-view":{
+            "title" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae!",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus perferendis dicta amet recusandae quam officiis sapiente aspernatur ex, repellendus voluptatum cum temporibus nesciunt fugit ipsam?"
+        },
+
         "mailing-lists": {
             "title": "Mailing Lists",
             "subtitle": "There are a total of {0} mailing lists.",
@@ -24,6 +31,7 @@
             }
         }
     },
+
     "component": {
         "header": {
             "mailing-lists": "Mailing Lists",
@@ -31,8 +39,21 @@
             "email-templates": "E-Mail Templates",
             "contact": "Contact"
         },
+        "public-header":{
+            "pricing": "Pricing",
+            "products": "Products",
+            "about": "About",
+            "log-in": "Log In",
+            "try-it-free": "Try it Free"
+        },
         "footer": {
             "copyright": "© Copyright Necati CAN. All rights reserved."
+        }
+    },
+
+    "main": {
+        "button" :{
+            "try-it-free" : "Try It Free"
         }
     }
 }

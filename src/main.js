@@ -16,7 +16,7 @@ import EN from '@/i18n/en.json'
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'EN',
+  locale: 'TR',
   fallbackLocale: 'EN',
   messages: {
     TR: TR,

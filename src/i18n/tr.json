@@ -2,7 +2,15 @@
     "message": {
         "hello": "Merhaba Dünya!"
     },
+
+
     "page": {
+
+        "home-view":{
+            "title" : "Nullam sit amet semper augue. Aliquam laoreet sapien hendrerit nisi.",
+            "description": "Nam vel lorem sed dui ultricies dignissim non eget tortor. Nunc vitae nibh eu quam tempus sodales ut non leo. Aliquam ut orci eget tortor malesuada ornare. Donec aliquet massa. "
+        },
+
         "mailing-lists": {
             "title": "Posta Listeleri",
             "subtitle": "Toplam {0} adet posta listesi bulunmaktadır.",
@@ -24,6 +32,8 @@
             }
         }
     },
+
+
     "component": {
         "header": {
             "mailing-lists": "Posta Listeleri",
@@ -31,8 +41,22 @@
             "email-templates": "E-Posta Şablonları",
             "contact": "İletişim"
         },
+        "public-header":{
+            "pricing": "Fiyatlandırma",
+            "products": "Ürünler",
+            "about": "Hakkında",
+            "log-in": "Giriş Yap",
+            "try-it-free": "Ücretsiz Deneyin"
+        },
         "footer": {
             "copyright": "© Telif Hakkı Necati CAN. Tüm hakları saklıdır."
+        }
+    },
+
+
+    "main": {
+        "button" :{
+            "try-it-free" : "Ücretsiz Deneyin"
         }
     }
 }
