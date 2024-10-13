@@ -16,7 +16,7 @@ const userLanguage = navigator.language;
 
 const languages = ref([
     {
-        label: 'Turkish',
+        label: 'Türkçe',
         icon: TurkiyeFlag,
         code: 'TR',
         selected: false,
@@ -69,7 +69,7 @@ onMounted(() => {
 
 </script>
 <template>
-    <Button rounded class="!p-2 relative bg-transparent border-none text-white ml-4" @click="toggle" aria-haspopup
+    <Button class="relative bg-transparent !rounded-3xl !px-2.5 !py-3 text-deep-violet ml-2 sm:!py-2.5 sm:!px-3 sm:!rounded-lg sm:ml-4 sm:!border-deep-violet/30 hover:!border-deep-violet hover:bg-deep-violet  hover:text-snow-white " @click="toggle" aria-haspopup
         aria-controls="languages_menu">
         <i class="fa-solid fa-language"></i>
     </Button>
