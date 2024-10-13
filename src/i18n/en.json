@@ -1,0 +1,59 @@
+{
+    "message": {
+        "hello": "Hello World!"
+    },
+    
+    "page": { 
+
+        "home-view":{
+            "title" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae!",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus perferendis dicta amet recusandae quam officiis sapiente aspernatur ex, repellendus voluptatum cum temporibus nesciunt fugit ipsam?"
+        },
+
+        "mailing-lists": {
+            "title": "Mailing Lists",
+            "subtitle": "There are a total of {0} mailing lists.",
+            "quantity": "{quantity}"
+        },
+        "contact": {
+            "title": "How can we help you ?",
+            "subtitle": "Thank you for your interest in {0}. Please use this form to contact us. We will get back to you as soon as we can.",
+            "url": "Mailinks",
+            "form":{
+                "first-name" : "First Name",
+                "last-name" : "Last Name",
+                "email-address": "E-Mail Address",
+                "question-type": "Question Type",
+                "general-question": "General Question",
+                "support-request" : "Support Request",
+                "message": "Message",
+                "confirm": "I consent to being contacted by the team."
+            }
+        }
+    },
+
+    "component": {
+        "header": {
+            "mailing-lists": "Mailing Lists",
+            "campaigns": "Campaigns",
+            "email-templates": "E-Mail Templates",
+            "contact": "Contact"
+        },
+        "public-header":{
+            "pricing": "Pricing",
+            "products": "Products",
+            "about": "About",
+            "log-in": "Log In",
+            "try-it-free": "Try it Free"
+        },
+        "footer": {
+            "copyright": "© Copyright Necati CAN. All rights reserved."
+        }
+    },
+
+    "main": {
+        "button" :{
+            "try-it-free" : "Try It Free"
+        }
+    }
+}

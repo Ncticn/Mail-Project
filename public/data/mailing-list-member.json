@@ -1,0 +1,26 @@
+[
+  {
+    "code": "necati.can@otto.com",
+    "name": "Necati CAN",
+    "phone": "0554 996 75 60",
+    "category": "SonKullan"
+  },
+  {
+    "code": "ahmet.ozmis@otto.com",
+    "name": "Ahmet OZMİŞ",
+    "phone": "0544 444 44 44",
+    "category": "SonKullan"
+  },
+  {
+    "code": "emre.cavdar@otto.com",
+    "name": "Tolunay Emre ÇAVDAR",
+    "phone": "0553 586 91 19",
+    "category": "SonKullan"
+  },
+  {
+    "code": "fehmi.anac@ottoo.com",
+    "name": "Fehmi ANAÇ",
+    "phone": "0551 111 11 11",
+    "category": "SonKullan"
+  }
+]

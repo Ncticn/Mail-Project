@@ -24,14 +24,10 @@ onMounted(async () => {
       class="mailing-list__header flex flex-col md:flex-row items-start justify-between gap-4"
     >
       <div class="mailing-list-header__title w-full">
-        <h1 class="text-3xl font-semibold">Mailing List</h1>
-        <h3 class="text-sm">
-          There are
-          <b class="text-violet-800">
-            {{ mailingLists.length }}
-          </b>
-          total mailing list
-        </h3>
+        <h1 class="text-3xl font-semibold">{{ $t('page.mailing-lists.title')}}</h1>
+        <I18nT tag="h3" keypath="page.mailing-lists.subtitle" class="text-sm">
+          <b class="text-violet-800"> {{ $t('page.mailing-lists.quantity', {quantity: mailingLists.length }) }}</b>
+        </I18nT>
       </div>
       <div
         class="mailing-list-header__buttons flex flex-col md:flex-row items-start justify-center md:justify-end w-full gap-4 md:gap-0"
