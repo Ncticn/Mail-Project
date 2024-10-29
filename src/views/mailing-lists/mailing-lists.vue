@@ -8,22 +8,19 @@ import { ref, onMounted } from "vue";
 
 const sortedMailLists = ref([]);
 
-// Veri yüklemesi (Mail listeleri) yapıldığında listeyi başlatmak
 const loadMailLists = async () => {
   try {
     const mailLists = await getMailLists();
-    sortedMailLists.value = mailLists; // İlk olarak sıralanmamış listeyi göstermek için atama yap
+    sortedMailLists.value = mailLists;
   } catch (error) {
     console.error("Mail listeleri yüklenirken hata oluştu:", error);
   }
 };
 
-// Bileşen yüklendiğinde veri çağrısı yap
 onMounted(() => {
   loadMailLists();
 });
 
-// `FilterSorting` bileşeninden gelen güncellenmiş listeyi işlemek
 const handleUpdateList = (updatedList) => {
   sortedMailLists.value = updatedList;
 };
@@ -39,7 +36,7 @@ const handleUpdateList = (updatedList) => {
         </I18nT>
       </div>
       <div class="mailing-list-header__buttons">
-        <FilterSorting @updateList="handleUpdateList"/>
+        <FilterSorting @updateList="handleUpdateList" />
         <Button label="Add New Mailing List" icon="pi pi-plus" iconPos="right" raised />
       </div>
     </div>
@@ -47,7 +44,7 @@ const handleUpdateList = (updatedList) => {
     <!-- Mail listesi kartları -->
     <div class="mailing-list__main flex flex-col gap-4">
       <CardMailingList v-for="item in sortedMailLists" :key="item.id" :name="item.list_name"
-        :members="item.total_subscribers" :emails="item.emails_sent" :created="item.created_at" />
+        :members="item.total_subscribers" :emails="item.emails_sent" :created="item.created_at" :item-id="item.id" />
     </div>
   </div>
 </template>
