@@ -4,6 +4,6 @@ export async function getMailLists() {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.log(`Merhabalar Sn.${error.message || error}`);
+    console.log(`Error Fetching Mail Lists ${error.message || error}`);
   }
 }

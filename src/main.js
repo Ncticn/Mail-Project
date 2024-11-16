@@ -9,6 +9,7 @@ import router from "./router";
 import PrimeVue from "primevue/config";
 import Aura from "./presets/aura";
 import ToastService from 'primevue/toastservice';
+import ConfirmationService from 'primevue/confirmationservice';
 import "primeicons/primeicons.css";
 
 import TR from '@/i18n/tr.json'
@@ -33,6 +34,7 @@ app.use(PrimeVue, {
   pt: Aura,
   ripple: true,
 });
+app.use(ConfirmationService);
 app.use(ToastService);
 app.use(i18n);
 app.mount("#app");
