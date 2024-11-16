@@ -1,6 +1,8 @@
 <script setup>
-import Footer from "@/components/Footer/Footer.vue";
-import Navbar from "@/components/Header/Navbar.vue";
+import Footer from "@/components/footer/Footer.vue";
+import Navbar from "@/components/header/Navbar.vue";
+import { RouterView } from "vue-router";
+
 
 </script>
 <template>
@@ -8,7 +10,9 @@ import Navbar from "@/components/Header/Navbar.vue";
     <Navbar />
   </header>
   <main>
-    <slot />
+    <div class="bg-white rounded-3xl p-6 md:px-8 md:py-6 mb-14">
+      <RouterView/>
+    </div>
   </main>
   <footer>
     <Footer />

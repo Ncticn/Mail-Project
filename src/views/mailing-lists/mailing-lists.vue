@@ -51,7 +51,7 @@ const handleUpdateList = (updatedList) => {
 
 <style scoped>
 .mailing-list {
-  @apply bg-white rounded-3xl p-6 md:px-8 md:py-6 flex flex-col gap-10 mb-14;
+  @apply flex flex-col gap-10;
 }
 
 .mailing-list__header {

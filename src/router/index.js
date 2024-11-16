@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/home/home-view.vue";
 import Contact from "@/views/contact/contact.vue";
+import MailingListDetails from "@/views/mailing-list-details/mailing-list-details.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -13,6 +14,11 @@ const router = createRouter({
       path: "/mailing-lists",
       name: "mailing",
       component: () => import("../views/mailing-lists/mailing-lists.vue"),
+    },
+    {
+      path: "/mailing-lists/:id/details",
+      name: "mailing-lists-details",
+      component: MailingListDetails
     },
     {
       path: "/campaigns",
